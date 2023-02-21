@@ -6,3 +6,11 @@
 # 6 -> 1  4  1
 # 24 -> 4  16  4
 # 60 -> 10  40  10
+
+count_crane = int(input('Введите общее количество журавликов: '))
+count_serezha = count_petya = count_crane // 6
+count_katya = (count_serezha + count_petya) * 2
+if count_crane % 6 == 0:
+    print(f'{count_petya} {count_serezha} {count_katya}')
+else:
+    print('Некорректное условие задачи')

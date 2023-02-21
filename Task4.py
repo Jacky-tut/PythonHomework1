@@ -4,3 +4,13 @@
 # Пример:
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+width_chocolate = int(input('Введите ширину шоколадки: ' ))
+length_chocolate = int(input('Введите длину шоколадки: '))
+slices = int(input('Введите количество отламываемых долек: '))
+
+
+if slices % width_chocolate == 0 or slices % lengt_chocolate == 0:
+    print('Yes')
+else:
+    print('No')
